@@ -1,6 +1,6 @@
 <?php
 	$reckoning2_highscore = array();
-	$loadPoints= file_get_contents("Individual-ff10.json");
+	$loadPoints= file_get_contents("individual-ff10.json");
 	$reckoningPersonal = json_decode($loadPoints, true);
 ?>
 
