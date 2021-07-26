@@ -1,0 +1,13 @@
+.navbar {
+	font-size: xx-large;
+}
+
+.auto-center {
+	max-width: 50% !important;
+	margin: 0 auto;
+}
+
+#reckoning-buttons .btn {
+	width: 100% !important;
+	margin-top: 10px;
+}
