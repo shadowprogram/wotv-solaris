@@ -33,7 +33,7 @@
 				
 				<div id="reckoning-buttons" class="btn-group-vertical auto-center">
 				
-					<a href="#" role="button" aria-disabled="true" class="btn btn-primary">Ribbion Reckoning (rename later)</a>
+					<a href="#" role="button" aria-disabled="true" class="btn btn-primary">Ribbion Reckoning (not completed)</a>
 
 					<a href="ffiv_reckoning.php" role="button" aria-disabled="true" class="btn btn-primary">FFIV Reckoning</a>
 

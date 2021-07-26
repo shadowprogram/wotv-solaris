@@ -1,7 +1,9 @@
 <?php
-	$reckoning2_highscore = array();
 	$loadPoints= file_get_contents("individual-ff10.json");
 	$reckoningPersonal = json_decode($loadPoints, true);
+
+	$loadHighScore = file_get_contents("highscore-ff10.json");
+	$reckoningHighScore = json_decode($loadHighScore, true); 
 ?>
 
 <!DOCTYPE HTML>
@@ -54,6 +56,39 @@
 					?>
 				</table>
 			</div>
+
+			<div class="row">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Name</th>
+							<th scope="col">High Score</th>
+							<th scope="col">High Score Rank</th>
+						</tr>
+					</thead>
+
+					<?php
+						// individual score loop
+						$row2 = 1;
+
+						foreach($reckoningHighScore['members'] as $member) {
+							?>
+
+							<tr>	
+								<th scope="row"><?php echo $row2; ?></th>
+								<td><?php echo $member["Name"]; ?></td>
+								<td><?php echo $member["Highscore"]; ?></td>
+								<td><?php echo $member["Highscore Rank"]; ?></td>
+							</tr>
+
+							<?php
+							$row2++;
+						}
+					?>
+				</table>
+			</div>
+
 		</div>
 
 	</body>
